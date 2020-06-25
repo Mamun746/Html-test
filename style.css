@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+
+:root {
+  --heading-color: #b62e83;
+}
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.main-container {
+  margin: 15px 50px 10px 60px;
+  max-width: 1400px;
+}
+
+.heading {
+  background: var(--heading-color);
+  text-transform: uppercase;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* card style*/
+.card {
+  margin-top: 20px;
+  display: flex;
+}
+
+input[type="checkbox"] {
+  /* appearance: none;
+    -moz-appearance:none;
+    -webkit-appearance:none; */
+  background-color: #fff;
+  border: 2px solid black;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.card h4 {
+  width: 150px;
+}
+.card div {
+  text-align: center;
+  width: 200px;
+  text-align: left;
+}
+label {
+  text-transform: capitalize;
+  padding-left: 20px;
+}
+/* personal information */
+#personal-information {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.title {
+  margin: 20px 0 20px 0;
+  display: flex;
+}
+.title h4 {
+  width: 150px;
+  text-align: left;
+}
+.title div {
+  text-align: center;
+  width: 200px;
+  text-align: left;
+}
+.title .other-input {
+  margin-left: 50px;
+  width: 400px;
+  height: 40px;
+}
+.title .other-input input {
+  height: 30px;
+}
+.other-input input {
+  width: 400px;
+  height: 25px;
+  outline: 0;
+  border: none;
+  border: 1px solid black;
+}
+
+/* full name */
+
+.full-name {
+  display: grid;
+  grid-template-columns: 155px repeat(32, 1fr);
+  box-sizing: border-box;
+  /* width: 100%; */
+}
+.full-name div input {
+  height: 30px;
+  margin-top: 10px;
+  border: none;
+  border: 1px solid black;
+  
+}
+.full-name div input:focus {
+  outline: 0;
+}
+
+/* card name */
+.card-name p {
+  padding: 10px 0 10px 0;
+  margin: 0;
+}
+
+.card-name-grid {
+  margin-left: 150px;
+  display: grid;
+  grid-template-columns: repeat(19, 1fr) 3fr 2fr;
+}
+
+.card-name-grid input[type="text"] {
+  height: 30px;
+  border: none;
+  border: 1px solid black;
+}
+/* .card-name-grid input[type=checkbox]{
+    padding:20px
+} */
+
+/* date of birth */
+
+.date-of-birth {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 150px repeat(8, 53px) 200px 200px 200px auto;
+}
+.date-of-birth div input[type="text"] {
+  height: 30px;
+  border: none;
+  border: 1px solid black;
+}
+.date-of-birth div .last {
+  margin-left: 30px;
+}
+
+/* nationality */
+
+.nationality {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 150px repeat(17, 50px) auto;
+}
+
+.nationality div input[type="text"] {
+  height: 30px;
+  border: none;
+  border: 1px solid black;
+}
+/* passport number */
+.passport-number {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 250px 0.5fr 1fr;
+}
+
+.passport-number .left {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(9, 50px);
+}
+.passport-number .left input[type="text"] {
+  height: 30px;
+  border: none;
+  border: 1px solid black;
+}
+.passport-number .right {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 350px repeat(8, 50px);
+}
+
+.passport-number .right input[type="text"] {
+  height: 30px;
+  border: none;
+  border: 1px solid black;
+}
+
+.right h4 {
+  text-align: right;
+  margin-right: 50px;
+}
+.gap {
+  margin-left: 8px;
+}
+
+/* passport expiry date */
+
+.passport-expiry-date {
+  display: grid;
+  grid-template-columns: 150px 600px 100px auto;
+}
+.passport-expiry-date .left {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.passport-expiry-date .left input[type="text"] {
+  height: 30px;
+  border: none;
+  border: 1px solid black;
+}
+
+.passport-expiry-date .right {
+  display: grid;
+  grid-template-columns: 2fr auto;
+}
+
+.black {
+  height: 30px;
+  width: 30px;
+  background: black;
+  margin-left: 70px;
+}
+
+/* passport issue */
+
+.passport-issue {
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+
+.passport-issue .left {
+  display: grid;
+  grid-template-columns: 150px auto;
+}
+.passport-issue .right {
+  display: grid;
+  grid-template-columns: 300px repeat(9, 1fr);
+}
+
+/* tin */
+
+.tin {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.tin .left {
+  display: grid;
+  grid-template-columns: 150px repeat(12, 1fr);
+}
+
+.tin .right {
+  display: grid;
+  grid-template-columns: 150px repeat(17, 1fr);
+}
+::placeholder {
+  font-size: 20px;
+}
